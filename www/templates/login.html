@@ -1,0 +1,21 @@
+<ion-view title="Colegio Padre elizalde " hasHeader hide-back-button="true">
+    <ion-content padding="true" class="has-header">
+        <form>
+        <div class="text-center">
+            <img src="img/ipelogo.gif" class="img-responsive  img-logo">
+        </div>
+            <ion-list list-inset>       
+             <label class="item item-input">
+                    <input type="text" placeholder="Email" ng-model="creds.email">
+                    </label>
+                <label class="item item-input">
+                   <input type="password" placeholder="Contraseña" ng-model="creds.password">
+                </label>
+            </ion-list>
+            <div class="spacer" style="height: 40px;"></div>
+            <a ng-click="doLoginAction(creds)" class="button button-energized button-block">Iniciar sesion</a>
+            <a ng-click="doCreateUserAction(creds)" class="button button-positive button-clear button-block">Crear usuario</a>
+        </form>
+    </ion-content>
+</ion-view>
+
